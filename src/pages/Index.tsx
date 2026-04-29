@@ -5,6 +5,7 @@ import ArticleCard from "@/components/ArticleCard";
 import ArticleHero from "@/components/ArticleHero";
 import NewsletterBanner from "@/components/NewsletterBanner";
 import CategoryBadge from "@/components/CategoryBadge";
+import DynamicSlider from "@/components/DynamicSlider";
 
 const Index = () => {
   useEffect(() => {
@@ -17,6 +18,7 @@ const Index = () => {
 
   return (
     <div>
+      <DynamicSlider />
       <ArticleHero articolo={heroArticolo} />
 
       <section className="container py-16">
