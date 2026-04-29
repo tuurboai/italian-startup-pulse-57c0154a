@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { articoli, categorie, slugCategoria } from "@/data/articoli";
 import ArticleCard from "@/components/ArticleCard";
-import ArticleHero from "@/components/ArticleHero";
+
 import NewsletterBanner from "@/components/NewsletterBanner";
 import CategoryBadge from "@/components/CategoryBadge";
 import DynamicSlider from "@/components/DynamicSlider";
@@ -12,14 +12,12 @@ const Index = () => {
     document.title = "Founders.it — Storie e numeri delle startup italiane";
   }, []);
 
-  const heroArticolo = articoli[0];
   const inEvidenza = articoli.slice(1, 4);
   const ultimi = articoli.slice(4, 10);
 
   return (
     <div>
       <DynamicSlider />
-      <ArticleHero articolo={heroArticolo} />
 
       <section className="container py-16">
         <div className="max-w-3xl mb-10">
