@@ -28,6 +28,9 @@ jobs:
       - name: Add SPA fallback for GitHub Pages
         run: cp dist/index.html dist/404.html
 
+      - name: Add CNAME for custom domain
+        run: echo "www.tuurbo-blog.com" > dist/CNAME
+
       - name: Publish dist/ to prerendered branch
         run: |
           cd dist
