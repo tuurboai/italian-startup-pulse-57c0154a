@@ -1,15 +1,19 @@
 import { useEffect, useState } from "react";
-import { articoli } from "@/data/articoli";
+import { getArticoli } from "@/data/articoli";
+import { useLocale, t } from "@/i18n";
+
+const EYEBROW: Record<string, string> = { it: "In primo piano", en: "Featured", de: "Hervorgehoben" };
 
 export default function DynamicSlider() {
+  const locale = useLocale();
   const [loaded, setLoaded] = useState(false);
   const [index, setIndex] = useState(0);
 
-  const slides = articoli.slice(0, 5);
+  const slides = getArticoli(locale).slice(0, 5);
 
   useEffect(() => {
-    const t = setTimeout(() => setLoaded(true), 1500);
-    return () => clearTimeout(t);
+    const tm = setTimeout(() => setLoaded(true), 1500);
+    return () => clearTimeout(tm);
   }, []);
 
   useEffect(() => {
@@ -20,28 +24,17 @@ export default function DynamicSlider() {
     return () => clearInterval(i);
   }, [loaded, slides.length]);
 
-  if (!loaded) {
-    // No reserved space → causes CLS when slider appears
-    return null;
-  }
+  if (!loaded) return null;
 
   const current = slides[index];
 
   return (
     <section className="w-full bg-foreground text-background">
       <div className="relative w-full overflow-hidden">
-        {/* No fixed dimensions on the image → LCP and CLS suffer */}
-        <img
-          src={current.immagine}
-          alt=""
-          className="w-full object-cover"
-          style={{ maxHeight: "70vh" }}
-        />
+        <img src={current.immagine} alt="" className="w-full object-cover" style={{ maxHeight: "70vh" }} />
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/40 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 container pb-10">
-          <p className="text-xs uppercase tracking-widest text-background/80 mb-3">
-            In primo piano
-          </p>
+          <p className="text-xs uppercase tracking-widest text-background/80 mb-3">{EYEBROW[locale]}</p>
           <h2 className="font-display text-2xl md:text-4xl lg:text-5xl font-bold text-background max-w-3xl">
             {current.titolo}
           </h2>
@@ -50,9 +43,8 @@ export default function DynamicSlider() {
               <button
                 key={i}
                 onClick={() => setIndex(i)}
-                className={`h-1.5 w-8 rounded-full transition-colors ${
-                  i === index ? "bg-background" : "bg-background/30"
-                }`}
+                className={`h-1.5 w-8 rounded-full transition-colors ${i === index ? "bg-background" : "bg-background/30"}`}
+                aria-label={t[locale].article.popular}
               />
             ))}
           </div>
