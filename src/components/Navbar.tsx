@@ -40,14 +40,14 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-3">
           <div className="flex items-center gap-1 text-xs font-semibold uppercase tracking-wider">
             {LOCALES.map((l) => (
-              <button
+              <Link
                 key={l}
-                onClick={() => switchLocale(l)}
-                className={`px-1.5 py-0.5 rounded-sm transition-colors ${l === locale ? "text-primary" : "text-muted-foreground hover:text-foreground"}`}
+                to={lp(stripLocale(location.pathname), l)}
+                className={`px-1.5 py-1 rounded-sm transition-colors ${l === locale ? "text-primary" : "text-muted-foreground hover:text-foreground"}`}
                 aria-label={`Switch to ${l.toUpperCase()}`}
               >
                 {l}
-              </button>
+              </Link>
             ))}
           </div>
           <div className="relative">
