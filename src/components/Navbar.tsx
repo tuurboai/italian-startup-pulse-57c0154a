@@ -1,11 +1,10 @@
-import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { useLocale, lp, t, stripLocale, LOCALES, categorySlug } from "@/i18n";
 
 export default function Navbar() {
   const locale = useLocale();
   const nav = t[locale].nav;
   const location = useLocation();
-  const navigate = useNavigate();
 
   const links = [
     { to: lp("/articoli", locale), label: nav.articles, end: true },
@@ -15,12 +14,6 @@ export default function Navbar() {
     { to: lp("/autori", locale), label: nav.authors },
     { to: lp("/chi-siamo", locale), label: nav.about },
   ];
-
-  const switchLocale = (l: typeof locale) => {
-    // strip current locale from path then re-prefix
-    const base = stripLocale(location.pathname);
-    navigate(lp(base, l));
-  };
 
   return (
     <header className="border-b border-border bg-background sticky top-0 z-40">
@@ -47,14 +40,14 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center gap-3">
           <div className="flex items-center gap-1 text-xs font-semibold uppercase tracking-wider">
             {LOCALES.map((l) => (
-              <button
+              <Link
                 key={l}
-                onClick={() => switchLocale(l)}
-                className={`px-1.5 py-0.5 rounded-sm transition-colors ${l === locale ? "text-primary" : "text-muted-foreground hover:text-foreground"}`}
+                to={lp(stripLocale(location.pathname), l)}
+                className={`px-1.5 py-1 rounded-sm transition-colors ${l === locale ? "text-primary" : "text-muted-foreground hover:text-foreground"}`}
                 aria-label={`Switch to ${l.toUpperCase()}`}
               >
                 {l}
-              </button>
+              </Link>
             ))}
           </div>
           <div className="relative">
