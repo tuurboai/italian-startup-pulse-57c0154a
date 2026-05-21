@@ -1,12 +1,21 @@
-import { colorePerCategoria } from "@/data/articoli";
+import { colorePerCategoriaKey } from "@/data/articoli";
 import { cn } from "@/lib/utils";
+import type { CategoryKey } from "@/i18n";
 
-export default function CategoryBadge({ categoria, className }: { categoria: string; className?: string }) {
+export default function CategoryBadge({
+  categoria,
+  categoriaKey,
+  className,
+}: {
+  categoria: string;
+  categoriaKey: CategoryKey;
+  className?: string;
+}) {
   return (
     <span
       className={cn(
         "inline-block text-[10px] font-semibold uppercase tracking-widest px-2.5 py-1 rounded-sm",
-        colorePerCategoria(categoria),
+        colorePerCategoriaKey(categoriaKey),
         className,
       )}
     >
