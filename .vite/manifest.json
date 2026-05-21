@@ -1,0 +1,307 @@
+{
+  "_ArticleCard-CvRoEk9y.js": {
+    "file": "assets/ArticleCard-CvRoEk9y.js",
+    "name": "ArticleCard",
+    "imports": [
+      "index.html",
+      "_utils-CytzSlOG.js"
+    ]
+  },
+  "_autori-CHfc06GT.js": {
+    "file": "assets/autori-CHfc06GT.js",
+    "name": "autori",
+    "assets": [
+      "assets/aut-giulia-B6ZZAXTq.jpg",
+      "assets/aut-marco-Bd5I827W.jpg",
+      "assets/aut-sara-BmUsIz6N.jpg"
+    ]
+  },
+  "_client-0bRxooPE.js": {
+    "file": "assets/client-0bRxooPE.js",
+    "name": "client",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "_utils-CytzSlOG.js": {
+    "file": "assets/utils-CytzSlOG.js",
+    "name": "utils"
+  },
+  "index.html": {
+    "file": "assets/app-CGGwa-bc.js",
+    "name": "app",
+    "src": "index.html",
+    "isEntry": true,
+    "dynamicImports": [
+      "_client-0bRxooPE.js",
+      "_client-0bRxooPE.js",
+      "src/pages/Index.tsx",
+      "src/pages/Index.tsx",
+      "src/pages/Articoli.tsx",
+      "src/pages/ArticoliCategoria.tsx",
+      "src/pages/ArticoloSingolo.tsx",
+      "src/pages/Autori.tsx",
+      "src/pages/AutorePagina.tsx",
+      "src/pages/ChiSiamo.tsx",
+      "src/pages/Newsletter.tsx",
+      "src/pages/Contatti.tsx",
+      "src/pages/PrivacyPolicy.tsx",
+      "src/pages/CookiePolicy.tsx",
+      "src/AppShell.tsx",
+      "src/pages/NotFound.tsx"
+    ],
+    "css": [
+      "assets/app-BxYJBErm.css"
+    ],
+    "assets": [
+      "assets/art-1-VMIiPNGF.jpg",
+      "assets/art-2-2oagjUzQ.jpg",
+      "assets/art-3-BJ8Ug_Go.jpg",
+      "assets/art-4-CSc4uAv6.jpg",
+      "assets/art-5-CEKU3NDp.jpg",
+      "assets/art-6-gj29TN93.jpg",
+      "assets/art-7-BFIaqHXF.jpg",
+      "assets/art-8-W65ttx7h.jpg",
+      "assets/art-9-B9CUMJvD.jpg",
+      "assets/art-10-8sdMt985.jpg",
+      "assets/art-11-DX1PPHmm.jpg",
+      "assets/art-12-BSHEKRA9.jpg",
+      "assets/art-13-5fgqGDON.jpg",
+      "assets/art-14-C1RmB2PP.jpg",
+      "assets/art-15-Co883V_d.jpg",
+      "assets/art-16-fa5qcYTY.jpg",
+      "assets/art-17-Djxfglz9.jpg",
+      "assets/art-18-CechjF4R.jpg",
+      "assets/art-19-Cs5gP2Ij.jpg",
+      "assets/art-20-BU4oEN2q.jpg"
+    ]
+  },
+  "src/AppShell.tsx": {
+    "file": "assets/AppShell-C_EUtSU4.js",
+    "name": "AppShell",
+    "src": "src/AppShell.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_utils-CytzSlOG.js"
+    ]
+  },
+  "src/assets/art-1.jpg": {
+    "file": "assets/art-1-VMIiPNGF.jpg",
+    "src": "src/assets/art-1.jpg"
+  },
+  "src/assets/art-10.jpg": {
+    "file": "assets/art-10-8sdMt985.jpg",
+    "src": "src/assets/art-10.jpg"
+  },
+  "src/assets/art-11.jpg": {
+    "file": "assets/art-11-DX1PPHmm.jpg",
+    "src": "src/assets/art-11.jpg"
+  },
+  "src/assets/art-12.jpg": {
+    "file": "assets/art-12-BSHEKRA9.jpg",
+    "src": "src/assets/art-12.jpg"
+  },
+  "src/assets/art-13.jpg": {
+    "file": "assets/art-13-5fgqGDON.jpg",
+    "src": "src/assets/art-13.jpg"
+  },
+  "src/assets/art-14.jpg": {
+    "file": "assets/art-14-C1RmB2PP.jpg",
+    "src": "src/assets/art-14.jpg"
+  },
+  "src/assets/art-15.jpg": {
+    "file": "assets/art-15-Co883V_d.jpg",
+    "src": "src/assets/art-15.jpg"
+  },
+  "src/assets/art-16.jpg": {
+    "file": "assets/art-16-fa5qcYTY.jpg",
+    "src": "src/assets/art-16.jpg"
+  },
+  "src/assets/art-17.jpg": {
+    "file": "assets/art-17-Djxfglz9.jpg",
+    "src": "src/assets/art-17.jpg"
+  },
+  "src/assets/art-18.jpg": {
+    "file": "assets/art-18-CechjF4R.jpg",
+    "src": "src/assets/art-18.jpg"
+  },
+  "src/assets/art-19.jpg": {
+    "file": "assets/art-19-Cs5gP2Ij.jpg",
+    "src": "src/assets/art-19.jpg"
+  },
+  "src/assets/art-2.jpg": {
+    "file": "assets/art-2-2oagjUzQ.jpg",
+    "src": "src/assets/art-2.jpg"
+  },
+  "src/assets/art-20.jpg": {
+    "file": "assets/art-20-BU4oEN2q.jpg",
+    "src": "src/assets/art-20.jpg"
+  },
+  "src/assets/art-3.jpg": {
+    "file": "assets/art-3-BJ8Ug_Go.jpg",
+    "src": "src/assets/art-3.jpg"
+  },
+  "src/assets/art-4.jpg": {
+    "file": "assets/art-4-CSc4uAv6.jpg",
+    "src": "src/assets/art-4.jpg"
+  },
+  "src/assets/art-5.jpg": {
+    "file": "assets/art-5-CEKU3NDp.jpg",
+    "src": "src/assets/art-5.jpg"
+  },
+  "src/assets/art-6.jpg": {
+    "file": "assets/art-6-gj29TN93.jpg",
+    "src": "src/assets/art-6.jpg"
+  },
+  "src/assets/art-7.jpg": {
+    "file": "assets/art-7-BFIaqHXF.jpg",
+    "src": "src/assets/art-7.jpg"
+  },
+  "src/assets/art-8.jpg": {
+    "file": "assets/art-8-W65ttx7h.jpg",
+    "src": "src/assets/art-8.jpg"
+  },
+  "src/assets/art-9.jpg": {
+    "file": "assets/art-9-B9CUMJvD.jpg",
+    "src": "src/assets/art-9.jpg"
+  },
+  "src/assets/aut-giulia.jpg": {
+    "file": "assets/aut-giulia-B6ZZAXTq.jpg",
+    "src": "src/assets/aut-giulia.jpg"
+  },
+  "src/assets/aut-marco.jpg": {
+    "file": "assets/aut-marco-Bd5I827W.jpg",
+    "src": "src/assets/aut-marco.jpg"
+  },
+  "src/assets/aut-sara.jpg": {
+    "file": "assets/aut-sara-BmUsIz6N.jpg",
+    "src": "src/assets/aut-sara.jpg"
+  },
+  "src/pages/Articoli.tsx": {
+    "file": "assets/Articoli-BcjMEpE0.js",
+    "name": "Articoli",
+    "src": "src/pages/Articoli.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_ArticleCard-CvRoEk9y.js",
+      "_utils-CytzSlOG.js"
+    ]
+  },
+  "src/pages/ArticoliCategoria.tsx": {
+    "file": "assets/ArticoliCategoria-Cx4lfljC.js",
+    "name": "ArticoliCategoria",
+    "src": "src/pages/ArticoliCategoria.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_ArticleCard-CvRoEk9y.js",
+      "src/pages/NotFound.tsx",
+      "_utils-CytzSlOG.js"
+    ]
+  },
+  "src/pages/ArticoloSingolo.tsx": {
+    "file": "assets/ArticoloSingolo-BWo5SiCk.js",
+    "name": "ArticoloSingolo",
+    "src": "src/pages/ArticoloSingolo.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_autori-CHfc06GT.js",
+      "_ArticleCard-CvRoEk9y.js",
+      "src/pages/NotFound.tsx",
+      "_utils-CytzSlOG.js"
+    ]
+  },
+  "src/pages/AutorePagina.tsx": {
+    "file": "assets/AutorePagina-C47RQ4wS.js",
+    "name": "AutorePagina",
+    "src": "src/pages/AutorePagina.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_autori-CHfc06GT.js",
+      "_ArticleCard-CvRoEk9y.js",
+      "src/pages/NotFound.tsx",
+      "_utils-CytzSlOG.js"
+    ]
+  },
+  "src/pages/Autori.tsx": {
+    "file": "assets/Autori-R1m97Npm.js",
+    "name": "Autori",
+    "src": "src/pages/Autori.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_autori-CHfc06GT.js"
+    ]
+  },
+  "src/pages/ChiSiamo.tsx": {
+    "file": "assets/ChiSiamo-vHyzGlmx.js",
+    "name": "ChiSiamo",
+    "src": "src/pages/ChiSiamo.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_autori-CHfc06GT.js"
+    ]
+  },
+  "src/pages/Contatti.tsx": {
+    "file": "assets/Contatti-DGs2Et79.js",
+    "name": "Contatti",
+    "src": "src/pages/Contatti.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/pages/CookiePolicy.tsx": {
+    "file": "assets/CookiePolicy-wcl0uyxJ.js",
+    "name": "CookiePolicy",
+    "src": "src/pages/CookiePolicy.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/pages/Index.tsx": {
+    "file": "assets/Index-BoBYV7Cu.js",
+    "name": "Index",
+    "src": "src/pages/Index.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_ArticleCard-CvRoEk9y.js",
+      "_utils-CytzSlOG.js"
+    ]
+  },
+  "src/pages/Newsletter.tsx": {
+    "file": "assets/Newsletter-BCfSJPPM.js",
+    "name": "Newsletter",
+    "src": "src/pages/Newsletter.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/pages/NotFound.tsx": {
+    "file": "assets/NotFound-lwKPYOB9.js",
+    "name": "NotFound",
+    "src": "src/pages/NotFound.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/pages/PrivacyPolicy.tsx": {
+    "file": "assets/PrivacyPolicy-C8QbFrgJ.js",
+    "name": "PrivacyPolicy",
+    "src": "src/pages/PrivacyPolicy.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  }
+}
